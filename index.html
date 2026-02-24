@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PWC ELARA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-content">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="PWC Logo" class="logo">
+            <div class="header-text">
+                <h1>PWC ELARA</h1>
+                <p>Empowering Learners & Academic Resource Assistance</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT CARD -->
+    <div class="chat-card">
+
+        <!-- OPTIONS -->
+        <div class="options-card">
+            <h3>Welcome to PWC ELARA – Patna Women’s College Virtual Assistant</h3>
+            <p>How may I assist you today?</p>
+
+            <div class="options-buttons">
+                <button onclick="sendMessage('about college')">About the College</button>
+                <button onclick="sendMessage('admission')">Admission & Application Process</button>
+                <button onclick="sendMessage('academic rules')">Academic Rules</button>
+                <button onclick="sendMessage('other queries')">Other Queries</button>
+            </div>
+        </div>
+
+        <!-- CHAT MESSAGES -->
+        <div id="chatBox" class="chat-box"></div>  
+
+        <!-- INPUT AREA -->
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="micBtn" onclick="startListening()">🎤</button>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
