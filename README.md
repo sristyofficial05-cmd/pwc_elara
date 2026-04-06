@@ -24,3 +24,10 @@ python app.py
 ## Projects by
 Sristy Raj
 BSc AI & ML
+🚀
+
+🌌 PWC Elara
+Intelligent AI Assistant for Smart Productivity
+PWC Elara is an advanced AI-powered virtual assistant designed to enhance productivity, automate tasks, and provide intelligent responses using modern AI technologies.
+
+It combines voice interaction, automation, and smart search capabilities to act as a personal assistant for students, developers, and professionals.
